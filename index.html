@@ -1,0 +1,33 @@
+<!DOCTYPEhtml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<script>
+    let ans = 0
+    let ExpandedAns = "u"
+</script>
+<body>
+    <div class="calculator">
+        <h3 id="display"></h3>
+        <h6 id="displayB"></h6>
+        <div class="buttons">
+          <button onclick="ans += 1; document.getElementById('display').innerHTML = ans;">1</button>
+            <button onclick="ans += 2; document.getElementById('display').innerHTML = ans;">2</button>
+            <button onclick="ans += 3; document.getElementById('display').innerHTML = ans;">3</button>
+            <button onclick="ans += 4; document.getElementById('display').innerHTML = ans;">4</button>
+            <button onclick="ans += 5; document.getElementById('display').innerHTML = ans;">5</button>
+            <button onclick="ans += 6; document.getElementById('display').innerHTML = ans;">6</button>
+            <button onclick="ans += 7; document.getElementById('display').innerHTML = ans;">7</button>
+            <button onclick="ans += 8; document.getElementById('display').innerHTML = ans;">8</button>
+            <button onclick="ans += 9; document.getElementById('display').innerHTML = ans;">9</button>
+            <button onclick="ans += 0; document.getElementById('displayB').innerHTML = num.toString(ans); document.getElementById('display').innerHTML = ans;">=</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
